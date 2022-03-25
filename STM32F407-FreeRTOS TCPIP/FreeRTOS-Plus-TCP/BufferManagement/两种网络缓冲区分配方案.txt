@@ -1,0 +1,4 @@
+为了简化起见，建议使用BufferAllocation_2.c，它是从FreeRTOS堆中获取其RAM的。
+BufferAllocation_2.c 只能与heap_4和heap_5内存分配器一起使用。
+但是使用BufferAllocation_2.c不能在中断里面分配以太网描述符，
+内存分配是要信号量保护的。
